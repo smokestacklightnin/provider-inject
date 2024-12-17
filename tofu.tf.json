@@ -1,0 +1,19 @@
+{
+    "terraform": {
+        "required_version": ">= 1.8.3",
+        "required_providers": {
+            "helm": {
+                "source": "opentofu/helm",
+                "version": "2.1.2"
+            },
+            "kubernetes": {
+                "source": "opentofu/kubernetes",
+                "version": ">= 2.20.0"
+            },
+            "keycloak": {
+                "source": "mrparkers/keycloak",
+                "version": "3.7.0"
+            }
+        }
+    }
+}
