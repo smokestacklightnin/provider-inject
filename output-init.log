@@ -4,15 +4,15 @@
 - foo in modules/foo
 
 [0m[1mInitializing provider plugins...[0m
-- Finding opentofu/helm versions matching "2.1.2"...
-- Finding opentofu/kubernetes versions matching ">= 2.20.0"...
+- Finding hashicorp/kubernetes versions matching ">= 2.20.0"...
 - Finding mrparkers/keycloak versions matching "3.7.0"...
-- Installing opentofu/helm v2.1.2...
-- Installed opentofu/helm v2.1.2 (signed, key ID [0m[1m0C0AF313E5FD9F80[0m[0m)
-- Installing opentofu/kubernetes v2.35.0...
-- Installed opentofu/kubernetes v2.35.0 (signed, key ID [0m[1m0C0AF313E5FD9F80[0m[0m)
+- Finding hashicorp/helm versions matching "2.1.2"...
+- Installing hashicorp/kubernetes v2.35.0...
+- Installed hashicorp/kubernetes v2.35.0 (signed, key ID [0m[1m0C0AF313E5FD9F80[0m[0m)
 - Installing mrparkers/keycloak v3.7.0...
 [33m- Installed mrparkers/keycloak v3.7.0. Signature validation was skipped due to the registry not containing GPG keys for this provider[0m[0m
+- Installing hashicorp/helm v2.1.2...
+- Installed hashicorp/helm v2.1.2 (signed, key ID [0m[1m0C0AF313E5FD9F80[0m[0m)
 
 Providers are signed by their developers.
 If you'd like to know more about provider signing, you can read about it here:
@@ -23,33 +23,6 @@ selections it made above. Include this file in your version control repository
 so that OpenTofu can guarantee to make the same selections by default when
 you run "tofu init" in the future.[0m
 
-[33m[33m╷[0m[0m
-[33m│[0m [0m[1m[33mWarning: [0m[0m[1mAdditional provider information from registry[0m
-[33m│[0m [0m
-[33m│[0m [0m[0mThe remote registry returned warnings for
-[33m│[0m [0mregistry.opentofu.org/opentofu/helm:
-[33m│[0m [0m- You are using opentofu/helm instead of hashicorp/helm. This provider is
-[33m│[0m [0mmaintained by HashiCorp and the OpenTofu project only builds the provider
-[33m│[0m [0mbinaries from the source code. Both the opentofu/ and hashicorp/ namespaces
-[33m│[0m [0min the OpenTofu Registry contain the OpenTofu-built provider binaries based
-[33m│[0m [0mon the HashiCorp source code. To avoid configuration errors, we recommend
-[33m│[0m [0musing the hashicorp/ namespaced providers.
-[33m╵[0m[0m
-[0m[0m
-[33m[33m╷[0m[0m
-[33m│[0m [0m[1m[33mWarning: [0m[0m[1mAdditional provider information from registry[0m
-[33m│[0m [0m
-[33m│[0m [0m[0mThe remote registry returned warnings for
-[33m│[0m [0mregistry.opentofu.org/opentofu/kubernetes:
-[33m│[0m [0m- You are using opentofu/kubernetes instead of hashicorp/kubernetes. This
-[33m│[0m [0mprovider is maintained by HashiCorp and the OpenTofu project only builds
-[33m│[0m [0mthe provider binaries from the source code. Both the opentofu/ and
-[33m│[0m [0mhashicorp/ namespaces in the OpenTofu Registry contain the OpenTofu-built
-[33m│[0m [0mprovider binaries based on the HashiCorp source code. To avoid
-[33m│[0m [0mconfiguration errors, we recommend using the hashicorp/ namespaced
-[33m│[0m [0mproviders.
-[33m╵[0m[0m
-[0m[0m
 [33m[33m╷[0m[0m
 [33m│[0m [0m[1m[33mWarning: [0m[0m[1mRedundant empty provider block[0m
 [33m│[0m [0m
@@ -66,7 +39,7 @@ you run "tofu init" in the future.[0m
 [33m│[0m [0mupdating an entry like the following to the required_providers block of
 [33m│[0m [0mmodule.foo:
 [33m│[0m [0m    helm = {
-[33m│[0m [0m      source = "opentofu/helm"
+[33m│[0m [0m      source = "hashicorp/helm"
 [33m│[0m [0m    }
 [33m│[0m [0m
 [33m│[0m [0m(and 5 more similar warnings elsewhere)

@@ -3,11 +3,11 @@
         "required_version": ">= 1.8.3",
         "required_providers": {
             "helm": {
-                "source": "opentofu/helm",
+                "source": "hashicorp/helm",
                 "version": "2.1.2"
             },
             "kubernetes": {
-                "source": "opentofu/kubernetes",
+                "source": "hashicorp/kubernetes",
                 "version": ">= 2.20.0"
             },
             "keycloak": {
